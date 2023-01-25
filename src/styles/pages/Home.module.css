@@ -1,25 +1,68 @@
 .body {
-  background-color: aqua;
+  background-color: #0F0F0F;
   padding: 0;
-  margin: 0;
-}
-.header {
-  background-color: blue;
-}
-.main {
-  background-color: red;
-  padding: 0;
-  margin: 0;
+  margin-left: 150px;
 }
 .section1 {
-  padding: 0;
+  margin-bottom: 15rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.section1:before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0.404) 80%
+  );
+  z-index: 1;
+}
+.header {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar {
+  margin: 1.5rem 1.5rem 0 0;
+}
+.bar {
+}
+.content {
+  color: aliceblue;
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.text {
+  width: 500px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.title {
+  font-size: xx-large;
   margin: 0;
 }
-.backgroundS1 {
-  padding: 0;
+.description {
   margin: 0;
 }
-
+.button {
+  width: 100px;
+}
+.x {
+  opacity: 75%;
+  border-radius: 50%;
+}
 @media (prefers-color-scheme: dark) {
   .code {
     background: #111;

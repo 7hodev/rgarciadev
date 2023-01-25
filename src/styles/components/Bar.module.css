@@ -1,0 +1,28 @@
+.bar {
+  background-color: #050505;
+  width: 150px;
+  height: 665px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  gap: 7rem;
+}
+.title {
+  color: aliceblue;
+  transform: rotate(270deg);
+}
+.redes {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 1rem;
+}
+.item {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 20px;
+}
