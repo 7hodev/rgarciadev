@@ -70,7 +70,7 @@ export default function Home() {
           <a
             href='https://conosywaffles.vercel.app/'
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
             className={styles.card}>
             <Image
               className={styles.cardImage}
@@ -86,7 +86,7 @@ export default function Home() {
           <a
             href='https://rgarciabogado.ga/'
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
             className={styles.card}>
             <Image
               className={styles.cardImage}
@@ -102,7 +102,7 @@ export default function Home() {
           <a
             href='https://age-calculator-eight.vercel.app/'
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
             className={styles.card}>
             <Image
               className={styles.cardImage}
