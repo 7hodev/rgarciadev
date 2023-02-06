@@ -1,5 +1,5 @@
 .body {
-  background-color: #0F0F0F;
+  background-image: linear-gradient(to left, #434343 0%, black 100%);
   padding: 0;
   margin-left: 150px;
 }
@@ -37,6 +37,7 @@
 .content {
   color: aliceblue;
   width: 90%;
+  margin-top: 4rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -57,12 +58,176 @@
   margin: 0;
 }
 .button {
-  width: 100px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
 }
+.button {
+  width: 12rem;
+  height: auto;
+}
+.button .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #fff;
+  border-radius: 1.625rem;
+}
+.button .circle .iconarrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+.button .circle .iconarrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+.button .circle .iconarrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #282936;
+  border-right: 0.125rem solid #282936;
+  transform: rotate(45deg);
+}
+.button .buttontext {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+.button:hover .circle {
+  width: 100%;
+}
+.button:hover .circle .iconarrow {
+  background: #282936;
+  transform: translate(1rem, 0);
+}
+button:hover .buttontext {
+  color: #282936;
+}
+.buttontext:hover {
+  color: #282936;
+}
+
 .x {
-  opacity: 75%;
-  border-radius: 50%;
 }
+.welcome {
+  color: #fff;
+  position: absolute;
+  top: 500px;
+  right: 50px;
+}
+.welcome h2 {
+  font-size: 10rem;
+  font-weight: 800;
+}
+.section2 {
+  color: #fff;
+  height: 500px;
+  margin: 20rem 0 0 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.pages {
+  width: 250px;
+  padding: 1rem;
+  border: #ffffff 0.2em solid;
+  border-radius: 10%;
+}
+.section3 {
+  margin: 5rem 0 0 0;
+  padding: 0 0 5rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+.titleS3 {
+  margin-left: 3rem;
+}
+.titleS3 h3 {
+  color: #fff;
+  font-size: 3rem;
+}
+.contentS3 {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.card {
+  width: 300px;
+  height: 225px;
+  background: white;
+  padding: 0.4em;
+  border-radius: 6px;
+  text-decoration: none;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 1rem;
+}
+.card:hover {
+  transform: scale(1.02);
+  transition: all 0.5s ease;
+}
+.cardImage {
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  height: 60%;
+  border-radius: 6px 6px 0 0;
+}
+.cardImage:hover {
+}
+.category {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: rgb(63, 121, 230);
+  padding: 10px 7px 0;
+}
+.category:hover {
+}
+.heading {
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  padding: 7px;
+}
+.heading:hover {
+  cursor: pointer;
+}
+
 @media (prefers-color-scheme: dark) {
   .code {
     background: #111;

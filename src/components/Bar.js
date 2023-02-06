@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 /* STYLES */
 import styles from '../styles/components/Bar.module.css'
 
@@ -6,7 +7,14 @@ export default function Bar() {
     return (
         <div className={styles.bar}>
             <div>
-                Logo
+                <Image
+                    className={styles.x}
+                    src="/logo.png"
+                    alt="We"
+                    width={50}
+                    height={50}
+                    objectFit="cover"
+                />
             </div>
             <div className={styles.title}>
                 <h2>Developer</h2>

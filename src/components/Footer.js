@@ -6,16 +6,16 @@ import styles from '../styles/components/Footer.module.css'
 const Footer = () => {
     return (
         <footer className={styles.footer}>
-            <a
-                href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Powered by{' '}
-                <span className={styles.logo}>
-                    <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-                </span>
-            </a>
+            <div className={styles.name}>
+                <a
+                    href="https://www.tjhonnar.ga"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Powered by{' '}
+                    <h3 className={styles.name_title}>7hoSoft</h3>
+                </a>
+            </div>
         </footer>
     )
 }
