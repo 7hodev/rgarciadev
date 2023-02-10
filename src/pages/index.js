@@ -48,10 +48,10 @@ export default function Home() {
           <h2>Welcome</h2>
         </div>
       </section>
-      <section id='services' className={styles.section2}>
+      {/* <section id='services' className={styles.section2}>
         <div className={styles.pages}>
           <h2>Landing Pages</h2>
-          <p>Las landing Pages son páginas de un sitio web que tienen como objetivo  </p>
+          <p>Una landing page incrementará la visibilidad de tu producto o servicio. Su objetivo es funcionar como punto de información rápida y accesible para sus posibles clientes.  ç</p>
         </div>
         <div className={styles.pages}>
           <h2>Sitio web</h2>
@@ -61,7 +61,7 @@ export default function Home() {
           <h2>App móviles</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam cum earum qui, dolores quidem voluptatibus repellendus, ea ipsum officiis ullam, alias provident vel accusantium temporibus incidunt neque accusamus eos corporis!</p>
         </div>
-      </section>
+      </section> */}
       <section id='portfolio' className={styles.section3}>
         <div className={styles.titleS3}>
           <h3>Portfolio</h3>

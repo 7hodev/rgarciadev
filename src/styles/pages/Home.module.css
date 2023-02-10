@@ -233,3 +233,23 @@ button:hover .buttontext {
     background: #111;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .welcome {
+    color: #fff;
+    position: relative;
+  }
+  .bar {
+    display: none;
+  }
+  .section2 {
+    display: none;
+  }
+  .contentS3 {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+}
