@@ -24,7 +24,7 @@ export default function Home() {
               resolución de problemas, brindar nuevas ideas y adaptación de
               nuevas tecnologías para estar siempre a la vanguardia.</p>
             <a
-              href="rodrigogarcia.pdf"
+              href="rodrigogarcia2.pdf"
               target="blank"
               className={styles.button}>
               <span className={styles.circle} aria-hidden="true">
