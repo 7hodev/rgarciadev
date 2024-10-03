@@ -6,17 +6,29 @@ import Bar from '../components/Bar'
 import Footer from '../components/Footer'
 /* STYLES */
 import styles from '../styles/pages/Home.module.css'
+/* CAROUSEL */
+import Carousel from '../components/Carousel'
 
 export default function Home() {
   return (
     <div className={styles.body}>
-      <section id='about' className={styles.section1}>
+      <section className={styles.home}>
         <header className={styles.header}>
           <div className={styles.navbar}><Navbar /></div>
         </header>
         <div className={styles.bar}>
           <Bar />
         </div>
+        <div className={styles.textHome}>
+          <h1>Rodrigo García</h1>
+          <h5>Junior Developer</h5>
+        </div>
+        <div className={styles.pages}>
+          <p>Home</p>
+          <div className={styles.line}></div>
+        </div>
+      </section>
+      <section id='about' className={styles.section1}>
         <div className={styles.content}>
           <div className={styles.text}>
             <h1 className={styles.title}>Rodrigo García</h1>
@@ -43,79 +55,72 @@ export default function Home() {
               objectFit="cover"
             />
           </div>
+
         </div>
-        <div className={styles.welcome}>
-          <h2>Welcome</h2>
+        <div className={styles.pages2}>
+          <p>About me</p>
+          <div className={styles.line2}></div>
         </div>
       </section>
-      {/* <section id='services' className={styles.section2}>
-        <div className={styles.pages}>
-          <h2>Landing Pages</h2>
-          <p>Una landing page incrementará la visibilidad de tu producto o servicio. Su objetivo es funcionar como punto de información rápida y accesible para sus posibles clientes.  ç</p>
-        </div>
-        <div className={styles.pages}>
-          <h2>Sitio web</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam cum earum qui, dolores quidem voluptatibus repellendus, ea ipsum officiis ullam, alias provident vel accusantium temporibus incidunt neque accusamus eos corporis!</p>
-        </div>
-        <div className={styles.pages}>
-          <h2>App móviles</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam cum earum qui, dolores quidem voluptatibus repellendus, ea ipsum officiis ullam, alias provident vel accusantium temporibus incidunt neque accusamus eos corporis!</p>
-        </div>
-      </section> */}
       <section id='portfolio' className={styles.section3}>
-        <div className={styles.titleS3}>
-          <h3>Portfolio</h3>
+        <div className={styles.content}>
+          <div className={styles.textS3}>
+            <h2>Portafolio</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel repellendus atque quis facere, placeat asperiores dolore ducimus aut perferendis sit odio voluptatibus ut magni quasi aliquam voluptates tempore expedita quae.</p>
+          </div>
+          <div className={styles.cards}>
+            <div
+              href='https://conosywaffles.vercel.app/'
+              target="_blank"
+              rel="noreferrer"
+              className={styles.card}>
+              <Image
+                src="/conosywaffles.png"
+                alt="We"
+                width={380}
+                height={200}
+                objectFit="cover"
+                className={styles.image}
+              />
+              <div className={styles.heading}>
+                <h3>Conos y Waffles Clarita</h3>
+              </div>
+            </div>
+            <a
+              href='https://rgarciabogado.org/'
+              target="_blank"
+              rel="noreferrer"
+              className={styles.card}>
+              <Image
+                className={styles.image}
+                src="/rgarciabogado.png"
+                alt="We"
+                width={300}
+                height={165}
+                objectFit="cover"
+              />
+              <div className={styles.heading}> Servicios de abogado
+              </div>
+            </a>
+            <a
+              href='https://age-calculator-eight.vercel.app/'
+              target="_blank"
+              rel="noreferrer"
+              className={styles.card}>
+              <Image
+                className={styles.cardImage}
+                src="/ageCalculator.png"
+                alt="We"
+                width={300}
+                height={165}
+                objectFit="cover"
+              />
+              <div className={styles.heading}> Age Calculator
+              </div>
+            </a>
+          </div>
         </div>
-        <div className={styles.contentS3}>
-          <a
-            href='https://conosywaffles.vercel.app/'
-            target="_blank"
-            rel="noreferrer"
-            className={styles.card}>
-            <Image
-              className={styles.cardImage}
-              src="/conosywaffles.png"
-              alt="We"
-              width={300}
-              height={165}
-              objectFit="cover"
-            />
-            <div className={styles.heading}> Conos y Waffles Clarita
-            </div>
-          </a>
-          <a
-            href='https://rgarciabogado.ga/'
-            target="_blank"
-            rel="noreferrer"
-            className={styles.card}>
-            <Image
-              className={styles.cardImage}
-              src="/rgarciabogado.png"
-              alt="We"
-              width={300}
-              height={165}
-              objectFit="cover"
-            />
-            <div className={styles.heading}> Servicios de abogado
-            </div>
-          </a>
-          <a
-            href='https://age-calculator-eight.vercel.app/'
-            target="_blank"
-            rel="noreferrer"
-            className={styles.card}>
-            <Image
-              className={styles.cardImage}
-              src="/ageCalculator.png"
-              alt="We"
-              width={300}
-              height={165}
-              objectFit="cover"
-            />
-            <div className={styles.heading}> Age Calculator
-            </div>
-          </a>
-        </div>
+
       </section>
       {/* <Footer /> */}
     </div>

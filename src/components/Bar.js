@@ -6,18 +6,10 @@ import styles from '../styles/components/Bar.module.css'
 export default function Bar() {
     return (
         <div className={styles.bar}>
-            <div>
-                <Image
-                    className={styles.x}
-                    src="/logo.png"
-                    alt="We"
-                    width={50}
-                    height={50}
-                    objectFit="cover"
-                />
+            <div className={styles.logo}>
+                <h2>RG</h2>
             </div>
             <div className={styles.title}>
-                <h2>Developer</h2>
             </div>
             <div className={styles.redes}>
                 <Link

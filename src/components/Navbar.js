@@ -11,13 +11,8 @@ export default function Navbar() {
                     </Link>
                 </div>
                 <div className={styles.item}>
-                    <Link href="#services">
-                        <a aria-current="page" >Servicios</a>
-                    </Link>
-                </div>
-                <div className={styles.item}>
                     <Link href="#portfolio">
-                        <a aria-current="page" ><i className="bi bi-briefcase-fill"></i></a>
+                        <a aria-current="page" >Portafolio</a>
                     </Link>
                 </div>
             </nav>
