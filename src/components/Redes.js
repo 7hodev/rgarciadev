@@ -9,6 +9,8 @@ const Redes = () => {
           data-social="linkedin"
           aria-label="LinkedIn"
           href="https://www.linkedin.com/in/rodrigothomasgarcia/"
+          target="_blank"
+          rel="noreferrer"
         >
           <div className={styles.filled}></div>
           <svg
@@ -33,6 +35,8 @@ const Redes = () => {
           data-social="github"
           aria-label="GitHub"
           href="https://github.com/Tjhonnark"
+          target="_blank"
+          rel="noreferrer"
         >
           <div className={styles.filled}></div>
           <svg
@@ -57,6 +61,8 @@ const Redes = () => {
           data-social="instagram"
           aria-label="Instagram"
           href="mailto:rodrigogarcia959@gmail.com.com"
+          target="_blank"
+          rel="noreferrer"
         >
           <div className={styles.filled}></div>
           <svg
