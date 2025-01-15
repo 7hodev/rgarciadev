@@ -42,7 +42,7 @@ export default function App() {
                 <div className={styles.container3}>
                   <div className={styles.containerText}>
                     <div className={styles.heading}>
-                      <h3>{project.title}</h3>
+                      <h3 key={project.id}>{project.title}</h3>
                       <div className={styles.avanzar}>
                         <div className={styles.preview}>
                           <i className="bi bi-caret-left-fill"></i>
@@ -53,8 +53,8 @@ export default function App() {
                       </div>
                     </div>
                     <div className={styles.textSection3}>
-                      <p>{project.description}</p>
-                      <Link href={project.link}>
+                      <p key={project.id}>{project.description}</p>
+                      <Link key={project.id} href={project.link}>
                         <a
                           className={styles.visitar}
                           target="_blank"
@@ -65,7 +65,7 @@ export default function App() {
                       </Link>
                     </div>
                   </div>
-                  <Link href={project.link}>
+                  <Link key={project.id} href={project.link}>
                     <a target="_blank" rel="noreferrer" className={styles.img}>
                       <Image
                         key={project.id}
