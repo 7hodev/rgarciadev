@@ -91,7 +91,6 @@
 
 @media only screen and (max-width: 450px) {
   .mySwiper {
-    
     width: 80%;
     height: auto;
     display: flex;
@@ -100,11 +99,17 @@
     align-items: center;
   }
 
+  .container3 {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
   .containerText {
-    
     width: 100%;
     height: auto;
-    margin: 0 0 0.5rem 0;
+    margin: 0.5rem 0 0 0;
     display: flex;
     flex-flow: column wrap;
     align-items: center;

@@ -44,7 +44,7 @@ export default function Home() {
               nuevas tecnologías para estar siempre a la vanguardia.
             </p>
             <a
-              href="rodrigogarcia2.pdf"
+              href="Rodrigo García.pdf"
               target="blank"
               className={styles.button}
             >
