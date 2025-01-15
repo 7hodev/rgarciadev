@@ -5,7 +5,7 @@ import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Bar from "../components/Bar";
 import Footer from "../components/Footer";
-import Carrousel from "../components/Carrousel";
+import Carrousel from "../components/Carrousel.js";
 /* STYLES */
 import styles from "../styles/pages/Home.module.css";
 
