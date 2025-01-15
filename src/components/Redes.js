@@ -34,7 +34,7 @@ const Redes = () => {
         <a
           data-social="github"
           aria-label="GitHub"
-          href="https://github.com/Tjhonnark"
+          href="https://github.com/7hodev"
           target="_blank"
           rel="noreferrer"
         >
