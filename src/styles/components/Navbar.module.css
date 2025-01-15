@@ -1,9 +1,3 @@
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
 .navbar {
   width: 100%;
   padding: 0.5rem;
@@ -12,54 +6,27 @@
   gap: 3rem;
 }
 
-.item {}
-
-.item a {
-  font-size: 14px;
-  color: #e1e1e1;
-  text-decoration: none;
-  font-family: inherit;
-  font-weight: 600;
-  cursor: pointer;
-  position: relative;
-  border: none;
-  background: none;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: color;
+.pages {
+  position: fixed;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
 }
 
-.item a:focus,
-.item a:hover {
-  color: #e1e1e1;
+.pages p {
+  transform: rotate(90deg);
+  margin: 1rem 0 1rem 6px;
 }
 
-.item a:focus:after,
-.item a:hover:after {
-  width: 100%;
-  left: 0%;
+.line {
+  width: 2px;
+  height: 40px;
+  background-color: #fff;
 }
 
-.item a:after {
-  content: "";
-  pointer-events: none;
-  bottom: -2px;
-  left: 50%;
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background-color: #e1e1e1;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: width, left;
-}
-
-.item a:active {
-  transform: scale(0.5);
-  transition: transform 0.8s ease-in-out;
-}
-
-.item a i {
-  margin-right: 0.5rem;
-  font-size: 1.2rem;
+@media only screen and (max-width: 450px) {
+  .pages {
+    position: absolute;
+  }
 }

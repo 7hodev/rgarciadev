@@ -18,49 +18,114 @@
 }
 
 .bar {
+  z-index: 2;
 }
 
 .home {
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.916579131652661) 0%, rgba(0, 0, 0, 1) 50%);
+  background-color: #000;
   color: #fff;
   width: 100%;
-  height: 600px;
+  height: 700px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
 
-.textHome h1 {
-  font-size: 5rem;
-}
-
-.pages {
-  position: absolute;
-  bottom: 35px;
-  right: 10px;
+.textHome {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
 }
 
-.pages p {
-  transform: rotate(90deg);
-  margin: 1rem 0 1rem 6px;
+.textHome h1 {
+  font-size: 5rem;
 }
 
-.line {
-  width: 2px;
-  height: 40px;
+.containerButton2 {
+  width: 100%;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textHome h3 {
+  text-align: end;
+  font-size: 1.5rem;
+}
+
+/* BUTTON 2 */
+/* From Uiverse.io by ozgeozkaraa01 */
+.button2 {
   background-color: #fff;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+  width: 3rem;
+  height: 3rem;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  /*animation: bounce_513 1s infinite;*/
 }
 
-/* SECTION 1*/
+.button2 a {
+  padding: 0 0 4px 0;
+  text-decoration: none;
+}
 
-.section1 {
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.916579131652661) 0%, rgba(0, 0, 0, 1) 50%);
-  height: 600px;
+.button2 a i {
+  color: #000;
+  padding: 0.5rem;
+  font-size: 2rem;
+  border-radius: 50%;
+}
+
+.button2:hover {
+  box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.8);
+  transform: scale(1.1);
+}
+
+.button2:active {
+  animation: button-click 0.2s ease;
+}
+
+@keyframes button-click {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce_513 {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+/* SECTION 2 */
+
+.section2 {
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.916579131652661) 0%,
+    rgba(0, 0, 0, 1) 50%
+  );
+  height: 700px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -95,7 +160,10 @@
   margin: 0;
 }
 
+/* BUTTOM */
 .button {
+  width: 12rem;
+  height: auto;
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -107,11 +175,6 @@
   padding: 0;
   font-size: inherit;
   font-family: inherit;
-}
-
-.button {
-  width: 12rem;
-  height: auto;
 }
 
 .button .circle {
@@ -215,66 +278,15 @@ button:hover .buttontext {
   background-color: #fff;
 }
 
-.carousel {
-  background-color: red;
-  width: 100%;
-}
-
-/* SECTION 3*/
+/* SECTION 3 */
 .section3 {
   background-color: #000;
-  height: 600px;
+  height: 700px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.content {
-  background-color: aqua;
-  width: 70%;
-}
-
-.textS3 {
-  background-color: blue;
-  width: 30%;
-}
-
-.cards {
-  background-color: red;
-  width: 70%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.card {  
-  width: 100%;
-  height: auto;
-  margin: 0 0 0 0;
-  display: flex;
-  flex-flow: row-reverse wrap;
   justify-content: center;
   align-items: center;
   z-index: 0;
-}
-
-
-.image {
-}
-
-.heading {
-  width: 250px;
-  font-size: 5rem;
-  font-weight: 600;
-  text-align: center;
-  color: #fff;
-  z-index: 2;
-}
-
-.heading:hover {
-  cursor: pointer;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -284,24 +296,43 @@ button:hover .buttontext {
 }
 
 @media only screen and (max-width: 450px) {
-  .welcome {
-    color: #fff;
-    position: relative;
+  .header {
+    z-index: 2;
+    position: absolute;
   }
 
   .bar {
-    display: none;
+    background-color: green;
+  }
+
+  .textHome {
+    width: 80%;
   }
 
   .section2 {
-    display: none;
-  }
-
-  .contentS3 {
-    width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    gap: 2rem;
+  }
+
+  .content {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    margin: 0;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .imageS1 {
+  }
+
+  .section3 {
+    height: 1000px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
