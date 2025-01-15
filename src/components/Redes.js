@@ -8,7 +8,7 @@ const Redes = () => {
         <a
           data-social="linkedin"
           aria-label="LinkedIn"
-          href="https://linkedin.com/"
+          href="https://www.linkedin.com/in/rodrigothomasgarcia/"
         >
           <div className={styles.filled}></div>
           <svg
@@ -32,7 +32,7 @@ const Redes = () => {
         <a
           data-social="github"
           aria-label="GitHub"
-          href="https://www.github.com/"
+          href="https://github.com/Tjhonnark"
         >
           <div className={styles.filled}></div>
           <svg
@@ -56,7 +56,7 @@ const Redes = () => {
         <a
           data-social="instagram"
           aria-label="Instagram"
-          href="https://www.instagram.com/"
+          href="mailto:rodrigogarcia959@gmail.com.com"
         >
           <div className={styles.filled}></div>
           <svg
