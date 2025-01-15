@@ -37,12 +37,12 @@ export default function App() {
       >
         {projects.map((project) => {
           return (
-            <SwiperSlide className={styles.swiperSlide}>
+            <SwiperSlide key={project.id} className={styles.swiperSlide}>
               <div className={styles.allContainer}>
                 <div className={styles.container3}>
                   <div className={styles.containerText}>
                     <div className={styles.heading}>
-                      <h3 key={project.id}>{project.title}</h3>
+                      <h3>{project.title}</h3>
                       <div className={styles.avanzar}>
                         <div className={styles.preview}>
                           <i className="bi bi-caret-left-fill"></i>

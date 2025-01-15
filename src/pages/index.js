@@ -8,8 +8,6 @@ import Footer from "../components/Footer";
 import Carrousel from "../components/Carrousel";
 /* STYLES */
 import styles from "../styles/pages/Home.module.css";
-/* CAROUSEL */
-import Carousel from "../components/Carousel";
 
 export default function Home() {
   return (
