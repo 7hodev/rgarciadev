@@ -286,7 +286,7 @@ button:hover .buttontext {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  z-index: 0;
+  z-index: 2;
 }
 
 @media (prefers-color-scheme: dark) {
